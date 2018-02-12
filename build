@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ocamlbuild -I slang/ slang.byte
