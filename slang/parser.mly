@@ -15,7 +15,8 @@ let get_loc = Parsing.symbol_start_pos
 %token ARROW BAR INL INR FST SND FUN NUF CASE OF REF ASSIGN BANG WHILE DO OD 
 
 %left ADD SUB                     /* lowest precedence */
-%left MUL DIV ANDOP OROP EQUAL ARROW  LT /* medium precedence */
+%left MUL ANDOP OROP EQUAL ARROW  LT /* medium precedence */
+%left DIV              /* highest precedence */
 %left ASSIGN              
 /*
 %nonassoc THEN    
